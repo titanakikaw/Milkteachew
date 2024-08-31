@@ -8,7 +8,7 @@ import { MailFilled, PhoneFilled } from "@ant-design/icons";
 
 interface IServicesPageProps {}
 
-const ServicesPage: React.FunctionComponent<IServicesPageProps> = (props) => {
+const ServicesPage: React.FunctionComponent<IServicesPageProps> = () => {
 	return (
 		<Layout style={{ padding: "3rem 10rem", background: "white" }}>
 			<Typography style={{ fontWeight: "bold", fontSize: "38px" }}>

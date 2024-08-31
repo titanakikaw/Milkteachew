@@ -57,7 +57,7 @@ const ListofContact = [
 	},
 ];
 
-const LandingPage: React.FunctionComponent<ILandingPageProps> = (props) => {
+const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 	return (
 		<>
 			<Layout style={{ backgroundColor: "white", padding: "0rem 15rem" }}>
@@ -135,7 +135,7 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = (props) => {
 							}}
 						>
 							<Row gutter={[48, 16]}>
-								{ListofService?.map((value, index) => {
+								{ListofService?.map((value) => {
 									return (
 										<Col
 											key={value?.index}

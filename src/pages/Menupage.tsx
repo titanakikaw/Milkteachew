@@ -1,10 +1,9 @@
-import { Button, Col, Divider, Layout, Row, Typography } from "antd";
+import { Col, Divider, Layout, Row, Typography } from "antd";
 import productSample from "../assets/product.svg";
-import * as React from "react";
 
 export interface IMenupageProps {}
 
-export function Menupage(props: IMenupageProps) {
+export function Menupage() {
 	return (
 		<Layout style={{ padding: "3rem 10rem", background: "white" }}>
 			<Typography.Title>Discover our Flavor’s</Typography.Title>
@@ -16,9 +15,9 @@ export function Menupage(props: IMenupageProps) {
 				gutter={[16, 16]}
 				style={{ marginTop: "2rem", justifyContent: "center" }}
 			>
-				{[...new Array(12)].map((value, index) => {
+				{[...new Array(12)].map((index) => {
 					return (
-						<Col span={5}>
+						<Col span={5} key={index}>
 							<div
 								style={{
 									textAlign: "center",

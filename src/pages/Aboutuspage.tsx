@@ -5,8 +5,6 @@ import carcol2 from "../assets/carousel_collection_2.jpg";
 import carcol3 from "../assets/carousel_collection_3.jpg";
 import carcol4 from "../assets/carousel_collection_4.jpg";
 import carcol5 from "../assets/carousel_collection_5.jpg";
-// import
-import * as React from "react";
 
 const carouselCollection = [
 	{
@@ -37,7 +35,7 @@ const carouselCollection = [
 
 export interface IAboutUsProps {}
 
-export function AboutUs(props: IAboutUsProps) {
+export function AboutUs() {
 	return (
 		<Layout style={{ padding: "3rem 10rem", background: "white" }}>
 			<Row style={{ alignItems: "center" }}>
