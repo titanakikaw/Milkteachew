@@ -65,7 +65,8 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 					style={{
 						display: "flex",
 						alignItems: "center",
-						height: "90vh",
+						height: "100%",
+						padding: "8rem 0",
 					}}
 				>
 					<Col xs={24} sm={24} md={12} lg={12} className="small-col-order-2">
@@ -126,7 +127,7 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 					<div
 						style={{
 							textAlign: "center",
-							padding: "1rem 3rem",
+							padding: "3rem 3rem",
 							width: "100%",
 						}}
 					>
@@ -181,11 +182,17 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 				style={{
 					backgroundColor: "white",
 					justifyContent: "center",
-					height: "100vh",
+					height: "100%",
 				}}
 				className="reponsive-layout"
 			>
-				<Row gutter={[16, 16]}>
+				<Row
+					gutter={[16, 16]}
+					style={{
+						height: "100%",
+						padding: "8rem 1rem",
+					}}
+				>
 					<Col
 						xs={24}
 						lg={12}
@@ -219,15 +226,16 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 						<img
 							src={collection2}
 							about="collection_2"
-							style={{ borderRadius: "5%", height: "500px" }}
+							style={{ borderRadius: "5%", width: "100%" }}
 						/>
 					</Col>
 				</Row>
 			</Layout>
-			<Layout style={{ justifyContent: "center", height: "50vh" }}>
+			<Layout style={{ justifyContent: "center" }}>
 				<Row
 					style={{
 						justifyContent: "center",
+						padding: "5rem 1rem",
 					}}
 				>
 					<Col span={24} style={{ textAlign: "center" }}>

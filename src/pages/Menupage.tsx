@@ -26,7 +26,10 @@ export function Menupage() {
 									textAlign: "center",
 								}}
 							>
-								<img src={productSample} style={{ margin: "auto" }} />
+								<img
+									src={productSample}
+									style={{ margin: "auto", width: "100%" }}
+								/>
 								<Divider style={{ marginBottom: "5px" }} />
 								<div style={{ textAlign: "left", padding: "1rem" }}>
 									<Typography.Title

@@ -38,10 +38,10 @@ export interface IAboutUsProps {}
 export function AboutUs() {
 	return (
 		<Layout
-			style={{ background: "white", justifyContent: "center", height: "80vh" }}
+			style={{ background: "white", justifyContent: "center", height: "100%" }}
 			className="reponsive-layout"
 		>
-			<Row style={{ alignItems: "center" }}>
+			<Row style={{ alignItems: "center", padding: "5rem 0" }}>
 				<Col lg={12} xs={24}>
 					<Typography.Title>About Us</Typography.Title>
 					<Typography style={{ maxWidth: "500px" }}>
