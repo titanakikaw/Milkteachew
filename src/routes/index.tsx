@@ -5,27 +5,32 @@ import App from "../App";
 import { Menupage } from "../pages/Menupage";
 import { AboutUs } from "../pages/Aboutuspage";
 
-export default createBrowserRouter([
+export default createBrowserRouter(
+	[
+		{
+			path: "/",
+			element: <App />,
+			children: [
+				{
+					path: "/",
+					element: <LandingPage />,
+				},
+				{
+					path: "Services",
+					element: <ServicesPage />,
+				},
+				{
+					path: "/Menu",
+					element: <Menupage />,
+				},
+				{
+					path: "/AboutUs",
+					element: <AboutUs />,
+				},
+			],
+		},
+	],
 	{
-		path: "/",
-		element: <App />,
-		children: [
-			{
-				path: "/",
-				element: <LandingPage />,
-			},
-			{
-				path: "Services",
-				element: <ServicesPage />,
-			},
-			{
-				path: "/Menu",
-				element: <Menupage />,
-			},
-			{
-				path: "/AboutUs",
-				element: <AboutUs />,
-			},
-		],
-	},
-]);
+		basename: "/Milkteachew/",
+	}
+);
