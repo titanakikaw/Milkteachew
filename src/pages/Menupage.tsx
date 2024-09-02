@@ -5,7 +5,10 @@ export interface IMenupageProps {}
 
 export function Menupage() {
 	return (
-		<Layout style={{ padding: "3rem 10rem", background: "white" }}>
+		<Layout
+			style={{ background: "white", height: "100%" }}
+			className="reponsive-layout"
+		>
 			<Typography.Title>Discover our Flavor’s</Typography.Title>
 			<Typography>
 				From classic to creative, our menu offers a wide range of milktea
@@ -17,7 +20,7 @@ export function Menupage() {
 			>
 				{[...new Array(12)].map((index) => {
 					return (
-						<Col span={5} key={index}>
+						<Col xs={12} lg={5} key={index}>
 							<div
 								style={{
 									textAlign: "center",

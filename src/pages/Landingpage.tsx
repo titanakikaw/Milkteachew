@@ -60,7 +60,7 @@ const ListofContact = [
 const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 	return (
 		<>
-			<Layout style={{ backgroundColor: "white", padding: "0rem 15rem" }}>
+			<Layout style={{ backgroundColor: "white" }} className="reponsive-layout">
 				<Row
 					style={{
 						display: "flex",
@@ -68,7 +68,7 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 						height: "90vh",
 					}}
 				>
-					<Col span={12}>
+					<Col xs={24} sm={24} md={12} lg={12} className="small-col-order-2">
 						<Typography.Title style={{ fontSize: "48px", fontWeight: "800" }}>
 							Indulge in the Creamy Goodness of Our
 							<br />
@@ -106,12 +106,22 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 							</Col>
 						</Row>
 					</Col>
-					<Col span={12} style={{ textAlign: "center" }}>
+					<Col
+						xs={24}
+						sm={24}
+						md={12}
+						lg={12}
+						style={{ textAlign: "center" }}
+						className="small-col-order-1"
+					>
 						<img src={photo1} alt="feature_photo" style={{ width: "100%" }} />
 					</Col>
 				</Row>
 			</Layout>
-			<Layout style={{ backgroundColor: "#FFF9FC", padding: "7rem 15rem" }}>
+			<Layout
+				style={{ backgroundColor: "#FFF9FC" }}
+				className="reponsive-layout"
+			>
 				<Row style={{ display: "flex", justifyContent: "center" }}>
 					<div
 						style={{
@@ -167,9 +177,21 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 					</div>
 				</Row>
 			</Layout>
-			<Layout style={{ backgroundColor: "white", padding: "9rem 20rem" }}>
-				<Row gutter={16}>
-					<Col span={12} style={{ display: "flex", alignItems: "center" }}>
+			<Layout
+				style={{
+					backgroundColor: "white",
+					justifyContent: "center",
+					height: "100vh",
+				}}
+				className="reponsive-layout"
+			>
+				<Row gutter={[16, 16]}>
+					<Col
+						xs={24}
+						lg={12}
+						style={{ display: "flex", alignItems: "center" }}
+						className="small-col-order-1"
+					>
 						<div>
 							<Typography.Title style={{ fontSize: "45px", fontWeight: "800" }}>
 								Crafted with Care
@@ -190,17 +212,19 @@ const LandingPage: React.FunctionComponent<ILandingPageProps> = () => {
 							display: "flex",
 							justifyContent: "center",
 						}}
-						span={12}
+						lg={12}
+						xs={24}
+						className="small-col-order-2"
 					>
 						<img
 							src={collection2}
 							about="collection_2"
-							style={{ borderRadius: "5%" }}
+							style={{ borderRadius: "5%", height: "500px" }}
 						/>
 					</Col>
 				</Row>
 			</Layout>
-			<Layout style={{ padding: "9rem 15rem" }}>
+			<Layout style={{ justifyContent: "center", height: "50vh" }}>
 				<Row
 					style={{
 						justifyContent: "center",

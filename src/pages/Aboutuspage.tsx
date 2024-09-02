@@ -37,9 +37,12 @@ export interface IAboutUsProps {}
 
 export function AboutUs() {
 	return (
-		<Layout style={{ padding: "3rem 10rem", background: "white" }}>
+		<Layout
+			style={{ background: "white", justifyContent: "center", height: "80vh" }}
+			className="reponsive-layout"
+		>
 			<Row style={{ alignItems: "center" }}>
-				<Col span={12}>
+				<Col lg={12} xs={24}>
 					<Typography.Title>About Us</Typography.Title>
 					<Typography style={{ maxWidth: "500px" }}>
 						Our milktea cafe was founded with a passion for creating the perfect
@@ -52,20 +55,19 @@ export function AboutUs() {
 						selection of unique and delicious offerings.
 					</Typography>
 				</Col>
-				<Col span={12} style={{ textAlign: "center" }}>
+				<Col lg={12} xs={24} style={{ textAlign: "center" }}>
 					<Carousel autoplay style={{ width: "100%" }}>
 						{carouselCollection?.map((value, index) => {
 							return (
 								<div style={{}} key={index}>
 									<div
 										style={{
-											// border: "5px",
 											borderRadius: "1rem",
-											height: "600px",
 											backgroundPosition: "center",
 											backgroundSize: "cover",
 											backgroundImage: `url(${value.image})`,
 										}}
+										className="small-carousel-h"
 									></div>
 								</div>
 							);

@@ -10,7 +10,10 @@ interface IServicesPageProps {}
 
 const ServicesPage: React.FunctionComponent<IServicesPageProps> = () => {
 	return (
-		<Layout style={{ padding: "3rem 10rem", background: "white" }}>
+		<Layout
+			style={{ background: "white", height: "100%" }}
+			className="reponsive-layout"
+		>
 			<Typography style={{ fontWeight: "bold", fontSize: "38px" }}>
 				Quality Service
 			</Typography>
@@ -21,9 +24,9 @@ const ServicesPage: React.FunctionComponent<IServicesPageProps> = () => {
 				contact number below
 			</Typography>
 			<Row>
-				<Col span={16}>
+				<Col lg={16} xs={24} className="small-col-order-2">
 					<Row gutter={[12, 12]} style={{ width: "100%" }}>
-						<Col span={12}>
+						<Col xs={24} lg={12}>
 							<div
 								style={{
 									borderRadius: "1rem",
@@ -33,7 +36,7 @@ const ServicesPage: React.FunctionComponent<IServicesPageProps> = () => {
 								}}
 							/>
 						</Col>
-						<Col span={12}>
+						<Col xs={24} lg={12}>
 							<div
 								style={{
 									borderRadius: "1rem",
@@ -45,7 +48,7 @@ const ServicesPage: React.FunctionComponent<IServicesPageProps> = () => {
 								}}
 							/>
 						</Col>
-						<Col span={12}>
+						<Col xs={24} lg={12} className="small-col-order-2">
 							<div
 								style={{
 									borderRadius: "1rem",
@@ -70,7 +73,7 @@ const ServicesPage: React.FunctionComponent<IServicesPageProps> = () => {
 								</div>
 							</div>
 						</Col>
-						<Col span={12}>
+						<Col xs={24} lg={12}>
 							<div
 								style={{
 									borderRadius: "1rem",
@@ -84,7 +87,7 @@ const ServicesPage: React.FunctionComponent<IServicesPageProps> = () => {
 						</Col>
 					</Row>
 				</Col>
-				<Col flex={1}>
+				<Col lg={8} xs={24} className="small-col-order-1">
 					<div
 						style={{
 							borderRadius: "1rem",
